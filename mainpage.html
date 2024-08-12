@@ -37,11 +37,11 @@
 </head>
 <body style="background-color: rgb(211, 222, 251);">
 
-    <nav class="navbar" style="height: 70px; background-color: rgb(142, 162, 189);">
+    <nav class="navbar" style="height: 70px; background-color: rgb(179, 208, 246);">
         <div class="container-fluid ms-4">
             <a class="navbar-brand text-dark"><i class="fa-solid fa-coins"></i>&nbsp;Welcome User</a>
             <form class="d-flex" role="search">
-                <button class="btn btn-outline-info me-2 text-dark mt-3" onclick="logout()" type="button">Logout</button>
+                <button class="btn btn-outline-primary me-2 text-dark mt-3" onclick="logout()" type="button">Logout</button>
             </form>
         </div>
     </nav>
@@ -49,17 +49,20 @@
     <section>
         <div class="main">
             <center>
-                <h1 class="heading" id="head1" style="color: rgb(0, 33, 78);">Smart Wallet</h1>
+                <h1 style="color: #000080; font-family: cursive; font-size: 50px;">
+                    <span style="color: #7C2C7E;">S</span>mart
+                    <span style="color: #7C2C7E;">W</span>allet
+                </h1>
             </center>
 
             <div class="container d-flex align-items-center justify-content-around mt-4">
-                <div style="background-color: white; color: rgb(0, 33, 78); height: 125px; width: 250px; border-radius: 20px; padding: 10px;">
+                <div style="background-color: white; color: #000080; height: 125px; width: 250px; border-radius: 20px; padding: 10px;">
                     <center>
                         <h4>TOTAL BALANCE</h4><br>
                         <h2 id="totalBalance"><i class="fa-solid fa-indian-rupee-sign"></i> 0</h2>
                     </center>
                 </div>
-                <div style="background-color: white; color: rgb(0, 33, 78); height: 125px; width: 250px; border-radius: 20px; padding: 10px;">
+                <div style="background-color: white; color: #000080; height: 125px; width: 250px; border-radius: 20px; padding: 10px;">
                     <center>
                         <h4>TOTAL EXPENSE</h4><br>
                         <h2 id="totalExpense"><i class="fa-solid fa-indian-rupee-sign"></i> 0</h2>
@@ -71,8 +74,8 @@
                 <div class="row mt-5">
                     <!-- Income Section -->
                     <div class="col-6">
-                        <div class="content border border-secondary p-3" style="margin-left: 100px; background-color: rgb(142, 162, 189); border-radius: 20px; border-color: rgb(0, 33, 78) !important;">
-                            <h1 class="text-center" style="color: rgb(0, 33, 78);">Add Income</h1>
+                        <div class="content border border-secondary p-3" style="margin-left: 100px; background-color: rgb(179, 208, 246); border-radius: 20px; border-color: rgb(0, 33, 78) !important;">
+                            <h1 class="text-center" style="color: #000080;">Add Income</h1>
                             <center>
                                 <input id="incomeType" placeholder="Enter Income Type" style="width: 400px;" type="text" class="form-control"><br>
                                 <input id="incomeAmount" placeholder="Enter Amount" style="width: 400px;" type="number" class="form-control"><br>
@@ -85,8 +88,8 @@
 
                     <!-- Expense Section -->
                     <div class="col-6">
-                        <div class="content border border-secondary p-3" style="margin-right: 100px; background-color: rgb(142, 162, 189); border-radius: 20px; border-color: rgb(0, 33, 78) !important;">
-                            <h1 class="text-center" style="color: rgb(0, 33, 78);">Add Expense</h1>
+                        <div class="content border border-secondary p-3" style="margin-right: 100px;background-color: rgb(179, 208, 246); border-radius: 20px; border-color: rgb(0, 33, 78) !important;">
+                            <h1 class="text-center" style="color: #000080;">Add Expense</h1>
                             <center>
                                 <input id="expenseType" placeholder="Enter Expense Type" style="width: 400px;" type="text" class="form-control"><br>
                                 <input id="expenseAmount" placeholder="Enter Amount" style="width: 400px;" type="number" class="form-control"><br>
@@ -109,14 +112,14 @@
 
     <section>
         <center>
-            <h2 class="mt-5" style="color: rgb(0, 33, 78);">Income and Expense Details</h2>
-            <hr style="width: 75%; color: rgb(0, 33, 78);">
+            <h2 class="mt-5" style="color: #000080;">Income and Expense Details</h2>
+            <hr style="width: 75%; color: #000080;">
         </center>
 
         <div class="container">
             <div class="row">
                 <div class="col table-responsive">
-                    <h3 style="color: rgb(0, 33, 78); margin-top: 15px;">Income</h3>
+                    <h3 style="color: #000080; margin-top: 15px;">Income</h3>
                     <table id="incomeTable" class="table mx-auto">
                         <thead class="fw-medium fs-5 table-warning">
                             <tr style="border-bottom: 5px rgb(0, 33, 78) solid;">
@@ -131,7 +134,7 @@
                     </table>
                 </div>
                 <div class="col table-responsive">
-                    <h3 style="color: rgb(0, 33, 78); margin-top: 15px;">Expense</h3>
+                    <h3 style="color: #000080; margin-top: 15px;">Expense</h3>
                     <table id="expenseTable" class="table mx-auto">
                         <thead class="fw-medium fs-5 table-warning">
                             <tr style="border-bottom: 5px rgb(0, 33, 78) solid;">
